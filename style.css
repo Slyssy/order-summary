@@ -18,8 +18,8 @@ html {
 .desktop-container {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .choose-dish {
@@ -123,6 +123,10 @@ h5 {
   color: #467a66;
 }
 
+.confirmation-button-hover {
+  display: none;
+}
+
 button {
   background-color: #46a67e;
   border: none;
@@ -134,15 +138,26 @@ button {
   font-size: 15px;
   color: #fff;
   display: block;
-  margin: 30px auto;
+  /* margin: 30px auto; */
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: 0.3s ease all;
 }
 
 button:hover {
-  opacity: 0.7;
   cursor: pointer;
+}
+
+button:hover .confirmation-button-hover {
+  display: inline;
+  transition: 0.3s ease all;
+}
+button:hover .confirmation-button {
+  display: none;
   transition: 0.3s ease all;
 }
 
@@ -151,14 +166,21 @@ button:hover {
   box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
   margin-top: 80px;
   margin-bottom: 50px;
+  position: absolute;
+  bottom: 5%;
 }
 
 .button-track {
   margin-top: 70px;
 }
+
 #dot {
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dot {
@@ -182,5 +204,12 @@ button:hover {
 
   .order-tracking {
     display: block;
+  }
+
+  .order-container-active {
+    width: 370px;
+    height: 610px;
+    box-shadow: 0px 40px 40px -20px #3c7b61;
+    position: relative;
   }
 }
