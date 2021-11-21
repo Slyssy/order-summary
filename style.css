@@ -1,24 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
   background: url("https://assets.codepen.io/6060109/ZigZag.png");
   display: flex;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .order-container {
   width: 327px;
+  min-width: 300px;
   height: 567px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 5px 10px 18px #272727;
+  box-shadow: 0px 40px 40px -20px #3c7b61;
   position: relative;
 }
 
 .close-icon {
   position: absolute;
   top: 15px;
-  left: 290px;
+  right: 15px;
+}
+
+.happy-face {
+  display: block;
+  margin: 50px auto 30px auto;
+}
+
+.confirmation {
+  font-size: 22px;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #2f463d;
+  text-align: center;
+}
+
+.confirmation-text {
+  font-size: 14px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  color: #828282;
+  line-height: 26px;
+  margin: 20px 35px;
+}
+
+.order-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: Montserrat;
+}
+
+.order-text {
+  width: 67%;
+  background-color: #f0fff5;
+}
+
+h5 {
+  font-size: 14px;
+}
+.order-text {
+  font-weight: 800;
+  color: #2f463d;
+  line-height: 17px;
+  padding: 15px 15px;
+}
+
+.order-text p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7a8f85;
+  line-height: 25px;
+}
+
+.change-link:link,
+.change-link:visited {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-size: 13px;
+  font-weight: 650;
+  color: #467a66;
+}
+
+button {
+  background-color: #46a67e;
+  border: none;
+  width: 279px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  margin: 30px 24px;
+  box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: 0.3s ease all;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s ease all;
 }
