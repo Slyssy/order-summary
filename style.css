@@ -40,6 +40,14 @@ html {
   position: relative;
 }
 
+.order-container-active {
+  width: 370px;
+  height: 610px;
+  box-shadow: 0px 40px 40px -20px #3c7b61;
+  position: relative;
+  z-index: 9;
+}
+
 .close-icon {
   position: absolute;
   top: 15px;
@@ -204,12 +212,5 @@ button:hover .confirmation-button {
 
   .order-tracking {
     display: block;
-  }
-
-  .order-container-active {
-    width: 370px;
-    height: 610px;
-    box-shadow: 0px 40px 40px -20px #3c7b61;
-    position: relative;
   }
 }
