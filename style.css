@@ -15,6 +15,20 @@ html {
   justify-content: center;
   align-items: center;
 }
+.desktop-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.choose-dish {
+  display: none;
+}
+
+.order-tracking {
+  display: none;
+}
 
 .order-container {
   width: 327px;
@@ -32,26 +46,41 @@ html {
   right: 15px;
 }
 
-.happy-face {
+.inner-container {
+  padding-top: 0.1px;
+}
+
+.main-image {
   display: block;
   margin: 50px auto 30px auto;
 }
 
-.confirmation {
+.hamburger {
+  width: 32%;
+  /* margin-bottom: 50px; */
+}
+
+.title {
   font-size: 22px;
   font-family: Montserrat;
   font-weight: 600;
   color: #2f463d;
   text-align: center;
+  padding: 0 15% 0 15%;
 }
 
-.confirmation-text {
+.text {
   font-size: 14px;
   font-family: Ubuntu, sans-serif;
   font-weight: 400;
   color: #828282;
   line-height: 26px;
   margin: 20px 35px;
+  text-align: center;
+}
+
+.choose-text {
+  margin-top: 40px;
 }
 
 .order-box {
@@ -117,6 +146,16 @@ button:hover {
   transition: 0.3s ease all;
 }
 
+.button-gray {
+  background-color: #bdbdbd;
+  box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.button-track {
+  margin-top: 70px;
+}
 #dot {
   display: flex;
   justify-content: center;
@@ -132,4 +171,16 @@ button:hover {
 
 .green {
   background-color: #67bd99;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .choose-dish {
+    display: block;
+    order: -1;
+  }
+
+  .order-tracking {
+    display: block;
+  }
 }
