@@ -24,10 +24,12 @@ html {
 
 .choose-dish {
   display: none;
+  margin-right: -10px;
 }
 
 .order-tracking {
   display: none;
+  margin-left: -10px;
 }
 
 .order-container {
